@@ -8,17 +8,8 @@ Clear();
 
 WriteLine("Введите число: ");
 int number = (Convert.ToInt32(ReadLine()));
-int a0 = number%10;
-int a1 = number/10;
-int a3 = number/100;
+if (number<=99)
+{
+    WriteLine ("Третьего числа в данной цифре отсутствует");
+}
 
-if (number/100<0)
-{
-    WriteLine ("Третье число отсутствует.");
-}
-else
-{
-    WriteLine (a3);
-}
-//int result = number-a3*100-a0;
-//WriteLine ($"Число в середине {result/10}");
